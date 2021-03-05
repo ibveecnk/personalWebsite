@@ -1,7 +1,8 @@
 import "../styles/globals.css";
+import "../styles/header.css";
 
-function MyApp({ Component, pageProps }) {
+function Site({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
 
-export default MyApp;
+export default Site;
