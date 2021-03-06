@@ -28,6 +28,12 @@ jobs:
 
       - run: npm run deploy
 
+      - run: mkdir out/assets
+
+      - run: mv out/_next/ out/assets
+
+      - run: rm -rf out/next/
+
       - run: touch out/.nojekyll
 
       - name: Deploy 🚀
