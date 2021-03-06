@@ -13,7 +13,9 @@ function gitHubData() {
   return (
     <div>
       <img width="100px" height="100px" src={data.avatar_url}></img>
-      <code>{JSON.stringify(data)}</code>
+      <p>
+        <code>{JSON.stringify(data)}</code>
+      </p>
     </div>
   );
 }
