@@ -10,15 +10,10 @@ ul > li {
   float: left;
 }
 
-li.mainLi {
-  float: left;
-  color: white;
-  padding: 0px 30px;
-  font-size: large;
-}
-
 li a {
   display: block;
+  float: left;
+  font-size: large;
   color: white;
   text-align: center;
   padding: 14px 16px;
