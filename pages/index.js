@@ -9,7 +9,7 @@ export default function Home() {
       <div className="cWrapper">
         <Title text="ibveecnk's page"></Title>
         <p>Welcome to my website, which is currently under construction.</p>
-        <p>It is constructed using next.js</p>
+        <p>It is constructed using next.js.</p>
       </div>
     </div>
   );

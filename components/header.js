@@ -6,10 +6,12 @@ function Header({ page }) {
       <div className="center">
         <nav id="mainNav">
           <ul className="navContainer">
-            <li className="mainLi">
+            <li>
               <Link href="/">
                 <a className="mainName">
-                  <b>ibveecnk</b>
+                  <b>
+                    <i>ibveecnk</i>
+                  </b>
                 </a>
               </Link>
             </li>
