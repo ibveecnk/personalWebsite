@@ -28,13 +28,14 @@ jobs:
 
       - run: npm run deploy
 
-      - run: mkdir out/assets
+      # Unnecessary if hosted on gh-pages /
+      #      - run: mkdir out/assets
 
-      - run: mv out/_next/* out/assets
+      #      - run: mv out/_next/* out/assets
 
-      - run: rm -rf out/next/
+      #      - run: rm -rf out/next/
 
-      - run: find ./out -type f -exec sed -i -e 's/\/_next//g' {} \;
+      #      - run: find ./out -type f -exec sed -i -e 's/\/_next//g' {} \;
 
       - run: touch out/.nojekyll
 
