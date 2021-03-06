@@ -21,10 +21,12 @@ jobs:
 
       - name: Install 🔧
         uses: actions/setup-node@v1
+
+      - name: Install dependencies 🔧
         uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install # will run `yarn install` command
-      
+
       - name: Prepare Deploy 🔧
         uses: borales/actions-yarn@v2.0.0
         with:
@@ -33,6 +35,6 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
-          BRANCH: gh-pages 
-          FOLDER: build 
-          CLEAN: true 
+          BRANCH: gh-pages
+          FOLDER: build
+          CLEAN: true
