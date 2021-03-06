@@ -38,7 +38,7 @@ jobs:
           cmd: deploy # will run `yarn deploy` command
 
       - name: Tell GH not to use yekyll
-        run: ls
+        run: touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
