@@ -38,7 +38,7 @@ jobs:
           cmd: deploy # will run `yarn deploy` command
 
       - name: Tell GH not to use yekyll
-        run: touch out/.nojekyll
+        run: echo ls
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
@@ -46,4 +46,3 @@ jobs:
           ACCESS_TOKEN: ${{secrets.DEPLOY_KEY}}
           BRANCH: gh-pages
           FOLDER: out
-          CLEAN: true
