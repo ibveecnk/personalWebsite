@@ -28,7 +28,7 @@ jobs:
 
       - run: npm run deploy
 
-      - run: touch out/.nojekyll
+      - run: touch out/.nojekyll && touch .nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
