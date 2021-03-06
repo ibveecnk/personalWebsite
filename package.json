@@ -14,7 +14,7 @@
     "next": "10.0.8",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "swr": "^0.4.2"
+    "swr": "0.4.2"
   },
   "devDependencies": {
     "eslint-config-get-off-my-lawn": "5.0.1"
