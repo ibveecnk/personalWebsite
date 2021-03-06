@@ -34,7 +34,7 @@ jobs:
 
       - run: rm -rf out/next/
 
-      - run: find . -type f -exec sed -i -e 's/\/_next//' {} \;
+      - run: find ./out -type f -exec sed -i -e 's/\/_next//' {} \;
 
       - run: touch out/.nojekyll
 
