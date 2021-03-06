@@ -260,7 +260,7 @@
     once "^1.4.0"
     universal-user-agent "^6.0.0"
 
-"@octokit/rest@^18.3.4":
+"@octokit/rest@18.3.4":
   version "18.3.4"
   resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-18.3.4.tgz#8e7ab02cd509e2fe7e71917a54254a8f8b827f20"
   integrity sha512-NES0pHbwyFB1D0jrLkdnIXgEmze/gLE0JoSNgfAe4vwD77/qaQGO/lRWNuPPsoBVBjiW6mmA9CU5cYHujJTKQA==
@@ -1069,7 +1069,7 @@ eslint-ast-utils@^1.1.0:
     lodash.get "^4.4.2"
     lodash.zip "^4.2.0"
 
-eslint-config-get-off-my-lawn@^5.0.1:
+eslint-config-get-off-my-lawn@5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/eslint-config-get-off-my-lawn/-/eslint-config-get-off-my-lawn-5.0.1.tgz#4797f5d840f054d9b453219d23a0de415dba2ad4"
   integrity sha512-Wq3Tzf+JrDyVQsgORAz4LANi5UKG7cvLyWdZozjkI3YfVabVN3gk0kQ+KDmTizZUCXLtzIMRaGcRB5RTN6cSXg==
