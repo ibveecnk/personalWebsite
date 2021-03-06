@@ -1,1 +1,4 @@
-module.exports = { assetsPrefix: "/assets", poweredByHeader: false };
+module.exports = {
+  basePath: "",
+  assetPrefix: "/assets/",
+};
