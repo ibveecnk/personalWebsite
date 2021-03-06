@@ -1,5 +1,8 @@
 name: Build and Deploy
-on: [push]
+on:
+  push:
+    branches:
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -36,5 +39,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           BRANCH: gh-pages
-          FOLDER: build
+          FOLDER: out
           CLEAN: true
