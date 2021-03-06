@@ -30,9 +30,11 @@ jobs:
 
       - run: mkdir out/assets
 
-      - run: mv out/_next/ out/assets
+      - run: mv out/_next/* out/assets
 
       - run: rm -rf out/next/
+
+      - run: find . -type f -exec sed -i -e 's/\/_next//' {} \;
 
       - run: touch out/.nojekyll
 
