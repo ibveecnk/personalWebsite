@@ -15,14 +15,9 @@ function Header({ page }) {
                 </a>
               </Link>
             </li>
-            <li className={page == "about" ? "active" : ""}>
-              <Link href="/about">
-                <a>about</a>
-              </Link>
-            </li>
-            <li className={page == "contact" ? "active" : ""}>
-              <Link href="/contact">
-                <a>contact</a>
+            <li className={page == "projects" ? "active" : ""}>
+              <Link href="/projects">
+                <a>projects</a>
               </Link>
             </li>
           </ul>

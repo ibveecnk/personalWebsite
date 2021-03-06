@@ -10,6 +10,10 @@ ul > li {
   float: left;
 }
 
+a.mainName {
+  background-color: rgba(226, 214, 43, 0.514);
+}
+
 li a {
   display: block;
   float: left;
