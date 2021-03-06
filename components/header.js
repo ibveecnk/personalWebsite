@@ -7,17 +7,17 @@ function Header({ page }) {
         <nav id="mainNav">
           <ul className="navContainer">
             <li className="mainLi">
-              <Link href="/">
+              <Link href=".">
                 <a className="mainName">Iven</a>
               </Link>
             </li>
             <li className={page == "about" ? "active" : ""}>
-              <Link href="/about">
+              <Link href="about">
                 <a>about</a>
               </Link>
             </li>
             <li className={page == "contact" ? "active" : ""}>
-              <Link href="/contact">
+              <Link href="contact">
                 <a>contact</a>
               </Link>
             </li>
