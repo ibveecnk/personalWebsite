@@ -1,13 +1,14 @@
 @import "_palette.scss";
 
 .container {
-  display: flex;
+  display: flexbox;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   align-items: auto;
-  align-content: start;
+  align-content: flex-start;
 }
+
 .container:after {
   display: block;
   margin: 11px;
@@ -15,15 +16,20 @@
 }
 .item {
   flex: 0 0 auto;
-  margin: 11px;
+  margin: 11px 11px;
   border: 1px solid black;
-  border-radius: 4px;
-  border-collapse: separate;
-  border-spacing: 15px 50px;
+  break-after: always;
+  display: table;
+  padding: 7px 10px;
 }
 .projectName {
   font-size: large;
 }
+
 .info {
   font-size: medium;
+}
+
+.description {
+  font-size: small;
 }

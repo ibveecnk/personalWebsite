@@ -26,14 +26,18 @@ function gitHubData() {
           <li key={index} className={styles.item}>
             <div className={styles.projectWrapper}>
               <Link href={data.html_url}>
-                <div className={styles.projectName}>
+                <span className={styles.projectName}>
                   <b>{data.name}</b>
-                </div>
+                </span>
               </Link>
               {data.description ? (
-                <div>{data.description}</div>
+                <span className={styles.description}>
+                  {" " + data.description}
+                </span>
               ) : (
-                "No description was provided"
+                <span className={styles.description}>
+                  {" No description was provided!"}
+                </span>
               )}
             </div>
           </li>
