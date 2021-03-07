@@ -1,11 +1,9 @@
 import Header from "../components/header";
 import Title from "../components/title";
-import "../styles/Projects.module.scss";
+import styles from "../styles/Projects.module.scss";
 
-import { Octokit } from "@octokit/rest";
 import useSWR from "swr";
 import Link from "next/link";
-const octokit = new Octokit();
 
 // Todo: Add caching
 
@@ -21,16 +19,27 @@ function gitHubData() {
       <div>You have been ratelimited by GitHub, please check back later.</div>
     );
   return (
-    <ul className="flex-container">
-      {data.map((data, index) => (
-        <li key={index} className="flex-item">
-          <Link href={data.html_url}>
-            <a>{data.name}</a>
-          </Link>
-          {data.description ? <div>{data.description}</div> : ""}
-        </li>
-      ))}
-    </ul>
+    <div>
+      <div className={styles.info}>Total repos: {data.length}</div>
+      <ul className={styles.container}>
+        {data.map((data, index) => (
+          <li key={index} className={styles.item}>
+            <div className={styles.projectWrapper}>
+              <Link href={data.html_url}>
+                <div className={styles.projectName}>
+                  <b>{data.name}</b>
+                </div>
+              </Link>
+              {data.description ? (
+                <div>{data.description}</div>
+              ) : (
+                "No description provided :("
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
