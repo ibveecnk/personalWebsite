@@ -1,6 +1,6 @@
-import Header from "../components/header";
-import Title from "../components/title";
+import Title from "../components/Title";
 import styles from "../styles/Projects.module.scss";
+import Layout from "../components/Layout";
 
 import useSWR from "swr";
 import Link from "next/link";
@@ -26,14 +26,18 @@ function gitHubData() {
           <li key={index} className={styles.item}>
             <div className={styles.projectWrapper}>
               <Link href={data.html_url}>
-                <div className={styles.projectName}>
+                <span className={styles.projectName}>
                   <b>{data.name}</b>
-                </div>
+                </span>
               </Link>
               {data.description ? (
-                <div>{data.description}</div>
+                <span className={styles.description}>
+                  {" " + data.description}
+                </span>
               ) : (
-                "No description provided :("
+                <span className={styles.description}>
+                  {" No description was provided!"}
+                </span>
               )}
             </div>
           </li>
@@ -42,15 +46,12 @@ function gitHubData() {
     </div>
   );
 }
-
 export default function Projects() {
   return (
-    <div className="Wrapper">
-      <Header page="projects"></Header>
-      <div className="cWrapper">
-        <Title text="Projects"></Title>
-        {gitHubData()}
-      </div>
+    <div>
+      <Layout content={null} />
+      <Title text="Projects"></Title>
+      {gitHubData()}
     </div>
   );
 }

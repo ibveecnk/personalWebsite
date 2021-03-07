@@ -1,3 +1,5 @@
+import styles from "../styles/Title.module.scss";
+
 function Title({ text }) {
   return (
     <div className="tWrapper">
