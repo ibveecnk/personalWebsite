@@ -1,4 +1,3 @@
-import "../styles/Index.module.scss";
 import Header from "../components/header";
 import Title from "../components/title";
 
