@@ -1,6 +1,6 @@
-import Header from "../components/header";
-import Title from "../components/title";
+import Title from "../components/Title";
 import styles from "../styles/Projects.module.scss";
+import Layout from "../components/Layout";
 
 import useSWR from "swr";
 import Link from "next/link";
@@ -42,15 +42,12 @@ function gitHubData() {
     </div>
   );
 }
-
 export default function Projects() {
   return (
-    <div className="Wrapper">
-      <Header page="projects"></Header>
-      <div className="cWrapper">
-        <Title text="Projects"></Title>
-        {gitHubData()}
-      </div>
+    <div>
+      <Layout content={null} />
+      <Title text="Projects"></Title>
+      {gitHubData()}
     </div>
   );
 }

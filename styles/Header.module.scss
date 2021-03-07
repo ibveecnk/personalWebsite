@@ -1,0 +1,35 @@
+@import "_palette.scss";
+
+.navUl {
+  margin: 0;
+  padding: 0;
+  float: right;
+  display: inline;
+  padding-top: 20px;
+}
+
+.navLi {
+  display: block;
+  float: left;
+}
+
+.A {
+  text-decoration: none;
+  display: block;
+  margin-right: 15px;
+  color: $eton-blue;
+}
+
+.navA {
+  padding: 1em 0.5em;
+  text-align: center;
+}
+
+.navContainer {
+  border-bottom: 1px solid $medium-purple;
+  height: 50px;
+}
+
+.logo {
+  float: left;
+}
