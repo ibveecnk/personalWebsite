@@ -1,7 +1,9 @@
+@import "_palette.scss";
+
 ul.navContainer {
   list-style-type: none;
   overflow: hidden;
-  background: linear-gradient(124deg, #2b1de8, #ff2400);
+  background: $gradient-right;
   background-size: 100% 100%;
   position: relative;
 }
@@ -11,7 +13,7 @@ ul > li {
 }
 
 a.mainName {
-  background-color: rgba(226, 214, 43, 0.514);
+  background-color: $orange-pantone;
 }
 
 li a {
@@ -29,5 +31,5 @@ li a:hover {
 }
 
 .active {
-  background-color: #d67e195e;
+  background-color: #d67e19b4;
 }
