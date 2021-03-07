@@ -33,7 +33,7 @@ function gitHubData() {
               {data.description ? (
                 <div>{data.description}</div>
               ) : (
-                "No description provided :("
+                "No description was provided"
               )}
             </div>
           </li>
