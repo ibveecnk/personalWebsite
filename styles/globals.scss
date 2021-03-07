@@ -1,11 +1,13 @@
+@import "_palette.scss";
+
 html,
 body {
   padding: 0 0 0 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: gray;
-  background-color: black;
+  color: $eton-blue;
+  background-color: $deep-space-sparkle;
 }
 
 a {
@@ -19,4 +21,9 @@ div.cWrapper {
 
 * {
   box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+  overflow: hidden;
 }
