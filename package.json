@@ -10,7 +10,7 @@
     "deploy": "yarn build && yarn export"
   },
   "dependencies": {
-    "@octokit/rest": "18.3.4",
+    "@octokit/rest": "18.3.5",
     "@zeit/next-sass": "1.0.1",
     "memory-cache": "0.2.0",
     "next": "10.0.8",
