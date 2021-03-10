@@ -17,7 +17,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "sass": "1.32.8",
-    "swr": "0.4.2"
+    "swr": "0.5.0"
   },
   "devDependencies": {
     "eslint-config-get-off-my-lawn": "5.0.1"
