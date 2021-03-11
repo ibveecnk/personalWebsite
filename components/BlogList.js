@@ -9,7 +9,6 @@ const BlogList = ({ allBlogs }) => {
     return Moment(date).format("DD.MM.YYYY HH:MM");
   }
 
-  console.log(allBlogs);
   return (
     <>
       <ul className="list">
