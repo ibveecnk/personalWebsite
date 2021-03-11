@@ -20,7 +20,7 @@
     "@zeit/next-sass": "1.0.1",
     "react-markdown": "5.0.3",
     "sass": "1.32.8",
-    "swr": "0.4.2"
+    "swr": "0.5.2"
   },
   "devDependencies": {
     "eslint-config-get-off-my-lawn": "5.0.1"
