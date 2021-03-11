@@ -6,17 +6,16 @@ import styles from "../styles/BlogList.module.scss";
 const BlogList = ({ allBlogs }) => {
   function reformatDate(fullDate) {
     const date = new Date(fullDate);
-    return Moment(date).format("DD.MM.YYYY hh:mm");
+    return Moment(date).format("DD.MM.YYYY HH:MM");
   }
 
-  console.log(allBlogs);
   return (
     <>
-      <ul className="list">
+      <ul className={styles.list}>
         {allBlogs.length >= 1 ? (
           allBlogs.map((post) => (
             <li>
-              <div className="blog__info">
+              <div className={styles.blogInfo}>
                 <h2>{post.frontmatter.title}</h2>
                 <h3> {reformatDate(post.frontmatter.date)}</h3>
                 <p>
