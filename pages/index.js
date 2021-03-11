@@ -1,17 +1,21 @@
 import Header from "../components/Header";
 import Title from "../components/Title";
 import Layout from "../components/Layout";
+import Link from "next/link";
 
 const content = (
   <div>
     <div>
       <Title text="ibveecnk's page"></Title>
-      <p>Welcome to my website, which is currently under construction.</p>
-      <p>It is constructed using next.js.</p>
+      <p>Hello, I am Iven.</p>
+      <p>
+        Welcome to my website, which is based on{" "}
+        <Link href="https://nextjs.org">next.js</Link>.
+      </p>
     </div>
   </div>
 );
 
 export default function Home() {
-  return <Layout content={content} />;
+  return <Layout content={content} title="home" />;
 }
