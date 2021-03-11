@@ -23,6 +23,11 @@ export default function Header(props) {
               <a className={styles.navA && styles.A}>Projects</a>
             </Link>
           </li>
+          <li className={styles.navLi}>
+            <Link href="/blog">
+              <a className={styles.navA && styles.A}>Blog</a>
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

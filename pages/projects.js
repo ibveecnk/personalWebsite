@@ -49,8 +49,12 @@ function gitHubData() {
 export default function Projects() {
   return (
     <div>
-      <Layout content={null} />
+      <Layout content={null} title="projects" />
       <Title text="Projects"></Title>
+      <p>
+        Here you can find a list of my projects which I open-sourced on github -
+        some are great and some are even better.
+      </p>
       {gitHubData()}
     </div>
   );
