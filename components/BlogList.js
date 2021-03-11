@@ -6,7 +6,7 @@ import styles from "../styles/BlogList.module.scss";
 const BlogList = ({ allBlogs }) => {
   function reformatDate(fullDate) {
     const date = new Date(fullDate);
-    return Moment(date).format("DD.MM.YYYY hh:mm");
+    return Moment(date).format("DD.MM.YYYY HH:MM");
   }
 
   console.log(allBlogs);
