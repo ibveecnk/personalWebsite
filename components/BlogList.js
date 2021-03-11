@@ -15,17 +15,15 @@ const BlogList = ({ allBlogs }) => {
       <ul className="list">
         {allBlogs.length >= 1 ? (
           allBlogs.map((post) => (
-            <Link key={post.slug} href={{ pathname: `/posts/${post.slug}` }}>
-              <li>
-                <div className="blog__info">
-                  <h2>{post.frontmatter.title}</h2>
-                  <h3> {reformatDate(post.frontmatter.date)}</h3>
-                  <p>
-                    <ReactMarkdown source={post.markdownBody} />
-                  </p>
-                </div>
-              </li>
-            </Link>
+            <li>
+              <div className="blog__info">
+                <h2>{post.frontmatter.title}</h2>
+                <h3> {reformatDate(post.frontmatter.date)}</h3>
+                <p>
+                  <ReactMarkdown source={post.markdownBody} />
+                </p>
+              </div>
+            </li>
           ))
         ) : (
           <p>No posts yet.</p>
