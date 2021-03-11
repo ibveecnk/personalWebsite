@@ -9,11 +9,12 @@
   align-content: flex-start;
 }
 
-.container:after {
+.container::after {
   display: block;
   margin: 11px;
   flex: 999 999 auto;
 }
+
 .item {
   flex: 0 0 auto;
   margin: 11px 11px;
@@ -22,6 +23,7 @@
   display: table;
   padding: 7px 10px;
 }
+
 .projectName {
   font-size: large;
 }
