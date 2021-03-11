@@ -11,11 +11,11 @@ const BlogList = ({ allBlogs }) => {
 
   return (
     <>
-      <ul className="list">
+      <ul className={styles.list}>
         {allBlogs.length >= 1 ? (
           allBlogs.map((post) => (
             <li>
-              <div className="blog__info">
+              <div className={styles.blogInfo}>
                 <h2>{post.frontmatter.title}</h2>
                 <h3> {reformatDate(post.frontmatter.date)}</h3>
                 <p>
