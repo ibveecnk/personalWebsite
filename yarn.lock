@@ -1519,10 +1519,10 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-get-off-my-lawn@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-get-off-my-lawn/-/eslint-config-get-off-my-lawn-6.0.0.tgz#867ffc7bf31089d88855e52059893457d78459bb"
-  integrity sha512-/Fguw5yFxUdS5/5HvTWrXK55kyc0j1vf9/YP9gHOUu4JTxMrx31l0hlhliQo8hjrcpRNIBXnAhyAnvK3kBZG5g==
+eslint-config-get-off-my-lawn@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-get-off-my-lawn/-/eslint-config-get-off-my-lawn-6.0.1.tgz#e0c564690edff7f89779aa4238064ec1add3f4de"
+  integrity sha512-8g2IDrVMmRCYuSp/L0USqRojP6+TyeLhVmuncsf1qB7FpK4pTWleIObO+opUBsINUYVO6Qq+Ah6eKXIGLv/hoA==
   dependencies:
     "@babel/core" "7.13.10"
     "@babel/eslint-parser" "7.13.10"
