@@ -12,7 +12,7 @@
   "dependencies": {
     "@octokit/rest": "18.5.3",
     "@zeit/next-sass": "1.0.1",
-    "glob": "7.1.6",
+    "glob": "7.1.7",
     "gray-matter": "4.0.3",
     "memory-cache": "0.2.0",
     "moment": "2.29.1",
