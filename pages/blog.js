@@ -5,10 +5,7 @@ import BlogList from "../components/BlogList";
 const Blogs = (props) => {
   return (
     <>
-      <Layout title="blog" />
-      <section>
-        <BlogList allBlogs={props.allBlogs} />
-      </section>
+      <Layout content={<BlogList allBlogs={props.allBlogs} />} title="blog" />
     </>
   );
 };

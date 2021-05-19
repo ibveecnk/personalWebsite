@@ -46,16 +46,17 @@ function gitHubData() {
     </div>
   );
 }
+
+let content = (
+  <div>
+    <Title text="Projects"></Title>
+    <p>
+      Here you can find a list of my projects which I open-sourced on github -
+      some are great and some are even better.
+    </p>
+  </div>
+);
+
 export default function Projects() {
-  return (
-    <div>
-      <Layout content={null} title="projects" />
-      <Title text="Projects"></Title>
-      <p>
-        Here you can find a list of my projects which I open-sourced on github -
-        some are great and some are even better.
-      </p>
-      {gitHubData()}
-    </div>
-  );
+  return <Layout content={[content, gitHubData()]} title="projects" />;
 }

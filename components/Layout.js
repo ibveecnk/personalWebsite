@@ -10,10 +10,10 @@ function Layout(props) {
       <NextHead>
         <title>{`ibveecnk ${props.title ? "- " + props.title : ""}`}</title>
       </NextHead>
-      {<Background />}
       <Header />
       <main className={styles.content}>
         <div className={styles.propcontent}>{props.content}</div>
+        {<Background />}
       </main>
     </div>
   );
