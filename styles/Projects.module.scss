@@ -1,13 +1,14 @@
 @import "_palette.scss";
 
 .container {
-  display: flexbox;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: left;
   align-items: auto;
   align-content: flex-start;
   padding: 0;
+  scroll-behavior: auto;
 }
 
 .container::after {
