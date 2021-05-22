@@ -2,13 +2,14 @@
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: left;
   align-items: auto;
   align-content: flex-start;
-  padding: 0;
   scroll-behavior: auto;
+  break-after: always;
+  padding: 10px 0px;
 }
 
 .container::after {
@@ -24,6 +25,7 @@
   break-after: always;
   display: table;
   padding: 7px 10px;
+  display: contents;
 }
 
 .projectName {
