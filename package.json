@@ -30,6 +30,6 @@
   },
   "devDependencies": {
     "eslint-config-get-off-my-lawn": "6.0.1",
-    "serve": "11.3.2"
+    "serve": "12.0.0"
   }
 }
